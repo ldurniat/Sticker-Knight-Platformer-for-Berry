@@ -41,19 +41,19 @@ function scene:create( event )
 	physics.start( )
 	physics.setDrawMode( 'hybrid' )
 	physics.setGravity( 0, 32 )
-	map = berry.new( filename, "scene/game/map" )
+	map = berry:new( filename, "scene/game/map" )
 	
 	sceneGroup:insert( map )
 
 	-- Find our hero!
 	map.extensions = "scene.game.lib."
 	map:extend( "hero" )
-	hero = map:getObject( { name="hero" } )
+	hero = map:getObjects( { name="hero" } )
 	hero.filename = filename
 	hero:setSequence( 'idle' )
 
 	-- Find enemy 
-	local enemy = map:getObject( {name="enemy" } )
+	local enemy = map:getObjects( {name="enemy" } )
 	if enemy then 
 		enemy:setSequence( 'enemyWalk' )
 		enemy:play() 

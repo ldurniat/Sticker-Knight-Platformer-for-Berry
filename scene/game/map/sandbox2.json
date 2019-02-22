@@ -1996,7 +1996,7 @@
  "nextobjectid":222,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.2.0",
+ "tiledversion":"1.2.1",
  "tileheight":32,
  "tilesets":[
         {
@@ -2450,7 +2450,7 @@
                  "id":0,
                  "properties":[
                         {
-                         "name":"sequenceName",
+                         "name":"name",
                          "type":"string",
                          "value":"idle"
                         }]
@@ -2476,7 +2476,7 @@
                  "id":1,
                  "properties":[
                         {
-                         "name":"sequenceName",
+                         "name":"name",
                          "type":"string",
                          "value":"walk"
                         }, 
@@ -2495,7 +2495,7 @@
                  "id":5,
                  "properties":[
                         {
-                         "name":"sequenceName",
+                         "name":"name",
                          "type":"string",
                          "value":"jump"
                         }]
@@ -2509,7 +2509,7 @@
                  "id":6,
                  "properties":[
                         {
-                         "name":"sequenceName",
+                         "name":"name",
                          "type":"string",
                          "value":"ouch"
                         }]

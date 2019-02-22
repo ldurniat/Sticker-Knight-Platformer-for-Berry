@@ -34,10 +34,10 @@ function scene:create( event )
 	-- Load our UI
 	physics.start( )
 	physics.setDrawMode( 'hybrid' )
-	local ui = berry.new( "scene/menu/ui/title.json", "scene/menu/ui" )
+	local ui = berry:new( "scene/menu/ui/title.json", "scene/menu/ui" )
 
 	-- Find the start button
-	start = ui:getObject( { name="start" } )
+	start = ui:getObjects( { name="start" } )
 	function start:tap()
 		fx.fadeOut( function()
 				composer.gotoScene( "scene.game", { params = {} } )
@@ -46,20 +46,20 @@ function scene:create( event )
 	fx.breath( start )
 
 	-- Find the help button
-	local help = ui:getObject( { name="help" } )
+	local help = ui:getObjects( { name="help" } )
 	function help:tap()
 		self.isVisible = not self.isVisible
 	end
 	help:addEventListener( "tap" )
 
-	local logo = ui:getObject( { name="logo" } )
+	local logo = ui:getObjects( { name="logo" } )
 
 	-- Transtion in logo
-	transition.from( ui:getObject( { name="logo" } ), { xScale = 2.5, yScale = 2.5, time = 333, transition = easing.outQuad } )
+	transition.from( ui:getObjects( { name="logo" } ), { xScale = 2.5, yScale = 2.5, time = 333, transition = easing.outQuad } )
 
 	-- Add streaks
 	local streaks = fx.newStreak()
-	streaks.x, streaks.y = ui:getObject( { name="logo" } ):localToContent( -10, 0 )
+	streaks.x, streaks.y = ui:getObjects( { name="logo" } ):localToContent( -10, 0 )
 	ui:getLayer( "clouds" ):insert( streaks )
 
 	--]==]
