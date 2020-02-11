@@ -1,4 +1,12 @@
 { "backgroundcolor":"#27b99a",
+ "compressionlevel":0,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":45,
  "infinite":false,
  "layers":[
@@ -1996,7 +2004,7 @@
  "nextobjectid":222,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.2.1",
+ "tiledversion":"1.3.2",
  "tileheight":32,
  "tilesets":[
         {
