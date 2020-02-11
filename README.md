@@ -6,4 +6,4 @@ This project serves as example. I use [Sticker Knight Platformer](https://github
 
 Original game was created by Ponywolf and it is available on github and marketplace for free.
 
-Tested with Tiled 1.3.1
+Tested with Tiled 1.3.2
